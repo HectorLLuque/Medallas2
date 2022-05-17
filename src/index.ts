@@ -1,9 +1,18 @@
-import "./styles.css";
+let btnEnviar = document.getElementById("enviar");
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>`;
+btnEnviar.addEventListener("click", () => {
+  let posicionLlegada: number = Number(dato1.value);
+  if (posicionLlegada === 1) {
+    console.log("Entregar medalla de oro");
+  } else {
+    if (posicionLlegada === 2) {
+      console.log("Entregar medalla de Plata");
+    } else {
+      if (posicionLlegada === 3) {
+        console.log("Entregar medalla de Bronce");
+      } else {
+        console.log("Entregar mencion de Participacion");
+      }
+    }
+  }
+});
